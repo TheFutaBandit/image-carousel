@@ -1,0 +1,103 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+* {
+margin: 0;
+}
+
+body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+display: block;
+max-width: 100%;
+}
+
+input, button, textarea, select {
+font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+overflow-wrap: break-word;
+}
+
+#root, #__next {
+isolation: isolate;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 300px;
+    width: 500px;
+    /* background-color: blue; */
+    position: absolute;
+}
+
+.picture_frame {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.picture_frame .picture_one {
+    background-color: blue;
+    display: none;
+}
+
+.picture_frame .picture_two {
+    display: none;
+    background-color: red;
+}
+
+.picture_frame .picture_three {
+    background-color: green;
+    display: none;
+}
+
+/* .picture_frame .picture {
+    height: 100%;
+    width: 100%;
+} */
+
+.visible {
+    /* background-color: blue; */
+    display:block !important;
+}
+
+.picture_one, .picture_two, .picture_three {
+    height: 100%;
+    width: 100%;
+}
+
+.next_arrow {
+    z-index: 1;
+    position: absolute;
+    top: 50%;  
+    transform: translate(0,-50%);
+    right: 0;
+}
+
+.prev_arrow {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+}
+
+
